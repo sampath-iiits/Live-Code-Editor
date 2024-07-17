@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code-Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <label><i style="color: red; font-size: 25px;" class='bx bxl-html5'></i>HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+
+            <label><i style="color: blue; font-size: 25px;" class='bx bxl-css3' ></i>CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+
+            <label><i style="color: yellow ; font-size: 25px;" class='bx bxl-javascript'></i>JavaScript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <label><i style="font-size: 25px;" class='bx bx-play'></i>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
